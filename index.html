@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofia & Miguel - 20.09.2025</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #faf9f7;
+            color: #5a4a42;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .gold-gradient {
+            background: linear-gradient(90deg, #d4af37 0%, #f9e076 100%);
+        }
+        .gold-text {
+            background: linear-gradient(90deg, #d4af37 0%, #f9e076 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .modal {
+            transition: opacity 0.3s ease;
+        }
+        .modal-content {
+            transform: scale(0.9);
+            transition: transform 0.3s ease;
+        }
+        .modal.active {
+            opacity: 1;
+            pointer-events: all;
+        }
+        .modal.active .modal-content {
+            transform: scale(1);
+        }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-cover bg-center" style="background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('https://images.unsplash.com/photo-1607946036361-190f33ec5fd4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3Mzg2NzB8MHwxfHNlYXJjaHwxfHxjYXNhbWVudG8lMjBlbGVnYW50ZSUyMGx1eG98ZW58MHx8fHwxNzQ2OTIxOTA5fDA&ixlib=rb-4.1.0&q=85');">
+        <div class="text-center px-4">
+            <h1 class="playfair text-5xl md:text-7xl font-light mb-4 gold-text">Sofia & Miguel</h1>
+            <div class="playfair text-2xl md:text-3xl font-light mb-8">20 de Setembro de 2025</div>
+            <div class="w-24 h-px gold-gradient mx-auto mb-8"></div>
+            <p class="max-w-md mx-auto mb-12 text-lg">Com grande alegria, convidamos você para celebrar nosso amor</p>
+            <a href="#rsvp" class="px-8 py-3 bg-transparent border border-[#d4af37] text-[#d4af37] hover:bg-[#d4af37] hover:text-white transition duration-300">Confirmar Presença</a>
+        </div>
+        <div class="absolute bottom-10 left-0 right-0 text-center">
+            <a href="#details" class="text-[#d4af37] animate-bounce inline-block">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="playfair text-4xl text-center mb-16 gold-text">Detalhes do Evento</h2>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12">
+                <div class="text-center">
+                    <div class="playfair text-3xl mb-4">Quando</div>
+                    <p class="text-xl mb-2">20 de Setembro de 2025</p>
+                    <p class="text-gray-600">RSVP até 10 de Setembro</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="playfair text-3xl mb-4">Onde</div>
+                    <p class="text-xl mb-2">Villa D'Oro</p>
+                    <p class="text-gray-600">Lisboa, Portugal</p>
+                </div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto mt-16">
+                <h3 class="playfair text-2xl text-center mb-8">Programação</h3>
+                <div class="space-y-6">
+                    <div class="flex items-start">
+                        <div class="w-24 flex-shrink-0 text-right pr-6 pt-1">
+                            <span class="text-[#d4af37]">16h</span>
+                        </div>
+                        <div class="border-l-2 border-[#d4af37] pl-6 pb-6">
+                            <h4 class="playfair text-xl mb-1">Cerimônia</h4>
+                            <p class="text-gray-600">Capela da Villa D'Oro</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 flex-shrink-0 text-right pr-6 pt-1">
+                            <span class="text-[#d4af37]">17h</span>
+                        </div>
+                        <div class="border-l-2 border-[#d4af37] pl-6 pb-6">
+                            <h4 class="playfair text-xl mb-1">Recepção</h4>
+                            <p class="text-gray-600">Jardins da Villa com coquetel</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 flex-shrink-0 text-right pr-6 pt-1">
+                            <span class="text-[#d4af37]">19h</span>
+                        </div>
+                        <div class="border-l-2 border-[#d4af37] pl-6 pb-6">
+                            <h4 class="playfair text-xl mb-1">Jantar</h4>
+                            <p class="text-gray-600">Salão principal com menu degustação</p>
+                        </div>
+                    </div>
+                    <div class="flex items-start">
+                        <div class="w-24 flex-shrink-0 text-right pr-6 pt-1">
+                            <span class="text-[#d4af37]">21h</span>
+                        </div>
+                        <div class="border-l-2 border-[#d4af37] pl-6">
+                            <h4 class="playfair text-xl mb-1">Festa</h4>
+                            <p class="text-gray-600">Até às 2h da manhã</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-[#faf9f7]">
+        <div class="container mx-auto px-4">
+            <h2 class="playfair text-4xl text-center mb-16 gold-text">Nossa História</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+                <div class="gallery-item cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1607946036361-190f33ec5fd4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3Mzg2NzB8MHwxfHNlYXJjaHwxfHxjYXNhbWVudG8lMjBlbGVnYW50ZSUyMGx1eG98ZW58MHx8fHwxNzQ2OTIxOTA5fDA&ixlib=rb-4.1.0&q=85" alt="Wedding venue" class="w-full h-80 object-cover">
+                </div>
+                <div class="gallery-item cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1511361231630-7d0284d0e651?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3Mzg2NzB8MHwxfHNlYXJjaHwyfHxjYXNhbWVudG8lMjBlbGVnYW50ZSUyMGx1eG98ZW58MHx8fHwxNzQ2OTIxOTA5fDA&ixlib=rb-4.1.0&q=85" alt="Wedding rings" class="w-full h-80 object-cover">
+                </div>
+                <div class="gallery-item cursor-pointer overflow-hidden rounded-lg shadow-lg transition-transform duration-300 hover:scale-105">
+                    <img src="https://images.unsplash.com/photo-1550855909-58ad1e69b513?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3Mzg2NzB8MHwxfHNlYXJjaHwzfHxjYXNhbWVudG8lMjBlbGVnYW50ZSUyMGx1eG98ZW58MHx8fHwxNzQ2OTIxOTA5fDA&ixlib=rb-4.1.0&q=85" alt="Wedding table" class="w-full h-80 object-cover">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- RSVP Section -->
+    <section id="rsvp" class="py-20 bg-white">
+        <div class="container mx-auto px-4 max-w-2xl">
+            <h2 class="playfair text-4xl text-center mb-16 gold-text">Confirme sua Presença</h2>
+            
+            <form class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label for="name" class="block mb-2">Nome Completo</label>
+                        <input type="text" id="name" class="w-full px-4 py-2 border-b border-gray-300 focus:border-[#d4af37] focus:outline-none">
+                    </div>
+                    <div>
+                        <label for="email" class="block mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border-b border-gray-300 focus:border-[#d4af37] focus:outline-none">
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="guests" class="block mb-2">Número de Convidados</label>
+                    <select id="guests" class="w-full px-4 py-2 border-b border-gray-300 focus:border-[#d4af37] focus:outline-none">
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                        <option value="4">4 pessoas</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block mb-4">Você comparecerá?</label>
+                    <div class="flex space-x-6">
+                        <label class="flex items-center">
+                            <input type="radio" name="attendance" value="yes" class="mr-2 text-[#d4af37] focus:ring-[#d4af37]" checked>
+                            <span>Com prazer!</span>
+                        </label>
+                        <label class="flex items-center">
+                            <input type="radio" name="attendance" value="no" class="mr-2 text-[#d4af37] focus:ring-[#d4af37]">
+                            <span>Infelizmente não</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div>
+                    <label for="message" class="block mb-2">Mensagem (opcional)</label>
+                    <textarea id="message" rows="3" class="w-full px-4 py-2 border-b border-gray-300 focus:border-[#d4af37] focus:outline-none"></textarea>
+                </div>
+                
+                <div class="pt-6">
+                    <button type="submit" class="w-full py-3 gold-gradient text-white hover:opacity-90 transition duration-300">Enviar Confirmação</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-[#faf9f7] text-center">
+        <div class="container mx-auto px-4">
+            <div class="playfair text-2xl mb-6 gold-text">Sofia & Miguel</div>
+            <div class="mb-6">20 de Setembro de 2025</div>
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="#" class="text-[#d4af37] hover:text-[#b89930]"><i class="fab fa-instagram text-xl"></i></a>
+                <a href="#" class="text-[#d4af37] hover:text-[#b89930]"><i class="fas fa-envelope text-xl"></i></a>
+            </div>
+            <div class="text-sm text-gray-500">© 2025 Sofia & Miguel. Todos os direitos reservados.</div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div id="gallery-modal" class="modal fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+        <div class="modal-content relative w-full max-w-4xl p-4">
+            <button id="close-modal" class="absolute -top-12 right-0 text-white text-3xl hover:text-[#d4af37] transition-colors duration-300">
+                <i class="fas fa-times"></i>
+            </button>
+            <img id="modal-image" src="" alt="" class="w-full max-h-[80vh] object-contain">
+        </div>
+    </div>
+
+    <script>
+        // Gallery modal functionality
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        const modal = document.getElementById('gallery-modal');
+        const modalImg = document.getElementById('modal-image');
+        const closeModal = document.getElementById('close-modal');
+
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const imgSrc = item.querySelector('img').src;
+                modalImg.src = imgSrc;
+                modal.classList.add('active');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        closeModal.addEventListener('click', () => {
+            modal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        });
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Form submission
+        const form = document.querySelector('form');
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Obrigado por confirmar sua presença! Entraremos em contato em breve.');
+            form.reset();
+        });
+    </script>
+</body>
+</html>
